@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: myblog
+  datasource:
+    url:  jdbc:mysql://xxx:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimeZone=UTC
+    username: root
+    password: xxx
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: xxx
+    port: 6379
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      table-prefix: ms_
+
+server:
+  port: 8888
+
+qiniu:
+  accessKey: xxx
+  accessSecretKey: xxx
